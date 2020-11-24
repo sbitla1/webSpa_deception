@@ -1,18 +1,34 @@
 # webSpa_deception
 Add deception mechanism (HoneyChecker) for OWASP WebSpa project.
-# How to run the project
+# How to run the WebSpa server project
 java-jar webspa.jar -server
 
-1. service start
+# command to start the webspa server
+service start
 
-1.useradd
-2.usershow
-3.useractivate
-4.pass-phraseshow
-5.addduppass-phrase(customcommand)
-6.actionadd(servicesshstart)/(windows-TASKKILL/F/IMhttpd.exe/T)
-7.actionshow
+# command to add user into webspa system
+user add
 
+# command to show list of user into webspa system
+user show
+
+# command to activate user into webspa system
+user activate
+
+# command to view user pass-phrase into webspa system
+pass-phrase show
+
+# command to add decoy pass-phrases for user into webspa system
+add dup pass-phrase (custom command)
+
+# command to add action to user into webspa system
+action add  (sudo service ssh start)/(windows -TASKKILL/F/IMhttpd.exe/T)
+
+# command to show user action into webspa system
+action show
+
+
+# How to run the WebSpa Client project
 java-jar webspa.jar -client
 
 http://localhost:80
