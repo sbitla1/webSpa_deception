@@ -34,3 +34,8 @@ java-jar webspa.jar -client
 http://localhost:80
 Enter pass-phrase: 
 Re-emter pass-phrase:
+
+Feature Added
+
+1. Introduced a virtual server (HoneyChecker) in Spring boot which will act Middle Man to Client and Server to detect the decoy User into System
+2. Web service call in REST api to verify the identify of original user into system
